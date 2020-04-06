@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset-"UTF-8">
+    <title> Survey Form </title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href = "css/1-2.css" />
+  </head>
+  
+
+<body>
+  <header><h1 id="title"> Survey Form </h1>
+  </header>
+  
+    <form id="survey-form" method="post">
+  <!-- eventually add functionality to this form -->
+      <center><br>
+  <p id="description">
+   Let us know how we can improve our page <br><br>
+  </p>
+
+   <div>
+     <div class="label">
+      <label id="name-label" class="required" for="name"> Name: </label>
+     </div>
+     <div class="response">
+      <input type="text" id="name" placeholder="Enter your name" required><br />
+     </div>
+   </div>
+     
+      
+   <div>
+     <div class="label">
+       <label id="email-label" class="required" for="email" > Email: </label>  
+     </div>
+     <div class="response">
+       <input type="email" id="email" placeholder="Enter your email" required><br />  
+     </div>
+   </div>     
+      
+   
+    <div>
+     <div class="label">
+       <label id="number-label" class="required" for="number" > Age: </label>  
+     </div>
+     <div class="response">
+       <input type="number" id="number" min="13" max="100" placeholder="Age" required><br />  
+     </div>
+   </div>        
+
+   <div>
+    <div class="label">
+       <label id="dropdown" for="option"> How did you hear about us?  </label>  
+     </div>
+     
+     <div class="response">
+     <select id="dropdown">
+       <option value="google" >Google</option>
+       <option value="friend">From a Friend</option>
+       <option value="linkedin">LinkedIn</option>
+       <option value="other">Other</option>
+     </select>
+      </div>     
+    </div>             
+      
+      
+     <div>
+     <div class="label">
+       <label id="radio-label" for="rating"> How would you rate this site overall? </label>  <br><br><br><br><br>
+     </div>
+     <div class="response"> 
+       <input type="radio" name="radio-label" value="5star"> 5 - Excellent  <br>
+       <input type="radio" name="radio-label" value="4star"> 4 - Very Good  <br>
+       <input type="radio" name="radio-label" value="3star"> 3 - Average  <br>
+       <input type="radio" name="radio-label" value="2star"> 2 - Below Average  <br>
+       <input type="radio" name="radio-label" value="1star"> 1 - Very Poor  <br>
+     </div>
+   </div>        
+      
+    <div>
+     <div class="label">
+       <label id="checkboxes" for="checkbox" > Which devices do you browse on (Check all that apply)? </label> <br><br><br> 
+     </div>
+     <div class="response">
+       <input type="checkbox" id="checkbox" value="desktop"> Desktop Computer <br>
+       <input type="checkbox" id="checkbox" value="laptop"> Laptop Computer <br>
+       <input type="checkbox" id="checkbox" value="console"> Console (eg. Xbox, PS4 etc;) <br>
+       <input type="checkbox" id="checkbox" value="tablet"> Tablet <br>
+       <input type="checkbox" id="checkbox" value="mobile"> Mobile Phone <br>
+       <br />  
+     </div>
+   </div>     
+      
+      <div>
+     <div class="label">
+       <label id="comments" for="comments" > Any additional comments? </label> <br><br>  
+     </div>
+     <div class="response">
+       <textarea rows="4" cols="50" name="comment" form="survey-form"> </textarea>
+     </div>
+   </div>            
+      
+ <input type="submit" id="submit" value="Submit">
+      
+      <br><br>
+      
+  </p>              
+  </form>              
+    
+    
+  <footer>
+  </footer>
+  
+  
+  
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
+  
+</body> 
+</html>

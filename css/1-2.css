@@ -1,0 +1,41 @@
+#title { 
+  text-align: center;
+  font-size: 52px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F5C193; /* Orange */
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  padding: 4%;
+  
+}
+
+#survey-form {
+  background-color: #E1EFE8; /* Minty Gray */
+}
+
+#description {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.label {
+  display: inline-block;
+  text-align: right;
+  vertical-align: center;
+  width: 30%;
+}
+
+.response {
+  display: inline-block;
+  text-align: left;
+  vertical-align: center;  
+  width: 40%;
+  padding: 20px;
+}
+
+.required::before {
+  color: red;
+  content: "*"
+}

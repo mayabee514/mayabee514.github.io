@@ -1,0 +1,61 @@
+main {
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .1em;
+}
+h1 {
+  color: #000000;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;  
+} 
+
+p.timeline {
+  padding: 20px; 
+  font-size: 20px;
+  text-align: center; 
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding: 20px;
+  }
+
+
+#main {
+  background-color: #ccc;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#title {
+  text-align: center;
+}
+
+#img-div {
+  background-color: #FFFFFF;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;  
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 15px;
+}
+
+#tribute-info {
+  font-size: 20px;
+  margin-left: 20%; 
+  margin-right: 20%;
+ }
+
+#tribute-link {
+ color: black; 
+}
