@@ -1,3 +1,51 @@
-.nav-bar {
-  
+.mainPage {
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header, #header {
+    background-color:white;
+    color: black; 
+    width: 100%; 
+    display: flex;
+    flex-flow: row wrap;    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img {
+    box-align: left;
+    text-align: left;
+}
+
+h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#nav-bar {
+    color: white; 
+    font-weight: 300; 
+    letter-spacing: 1px; 
+    align-self: flex-end;
+
+}
+
+nav a { 
+    padding: 14px 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+nav a:hover {
+    background-color: goldenrod;
+}
+
+#video {
+    background-color: black;
+    border: black;
+    border-radius: 20px;
+    
 }
