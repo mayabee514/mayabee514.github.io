@@ -1,4 +1,11 @@
+@media all and (max-width: 768px) {
+    .header, #nav-bar, .aboutus, .body {
+        column-width: 100%;
+    }
+}
+
 .mainPage {
+    /* margin: 0px 15% 0px 15%; */
     display: flex;
     flex-flow: column wrap; 
     justify-content: space-between;
@@ -6,29 +13,42 @@
 }
 
 .header, #header {
+    display: flex;
     background-color:white;
     color: black; 
     width: 100%; 
+    padding: 10px 16px;
     display: flex;
-    flex-flow: row wrap;    justify-content: space-between;
+    flex-flow: row wrap;    
+    justify-content: space-between;
     align-items: center;
 }
 
-#header-img {
-    box-align: left;
-    text-align: left;
-}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+  }
+
 
 h1 {
     font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 40px;
 }
 
 #nav-bar {
+    display: flex;
     color: white; 
+    font-size: 30px;
     font-weight: 300; 
     letter-spacing: 1px; 
     align-self: flex-end;
-
 }
 
 nav a { 
@@ -36,16 +56,84 @@ nav a {
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    
 }
 
 nav a:hover {
     background-color: goldenrod;
 }
 
+
+
+.body, #aboutus  {
+    display: flex;
+    background-color: burlywood;
+    color: black;
+    font-size: 24px;
+    width: 100%;
+    padding: 10px 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aboutusText {
+    color: blue;
+    padding: 30px 55px 30px 15px;
+    display: inline-block;
+}
+
+#beekeeping {
+    width: 50%;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 45px;  
+    
+}
+
+
 #video {
     background-color: black;
     border: black;
-    border-radius: 20px;
+    border-radius: 20px;    
+    margin: 45px;
+}
+
+
+
+.products {
+    width: 200px;
+    height: 200px;
+    background-color:blue;
+    text-align: center;
+
+}
+
+
+#products {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    justify-content: space-between; 
+  
+}
+
+.footer {
+    background-color: goldenrod;
+    text-align: center;
+    width: 100%;
     
+}
+
+.label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: center;
+    width: 30%;
+  }
+
+
+#submit {
+    color: blue;
 }
