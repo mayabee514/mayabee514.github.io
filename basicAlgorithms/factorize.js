@@ -10,3 +10,5 @@ function factorialize(num) {
     }
     
     factorialize(3);
+
+    
