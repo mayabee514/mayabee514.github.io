@@ -1,22 +1,16 @@
 function reverseString(str) {
+  var reverse = "";
+  for (var i=str.length-1; i >= 0; i--){
   
-  let arr = [];
-  arr = str.split('');
-  let newArr = [];
-  
-    for (var i = arr.length -1; i >= 0; i--){
-  
-      newArr.push(arr[i]);
-   
-    }
-  
-    let result = newArr.join("");
-    return console.log(result);
+  reverse += str[i];
   
   }
-    
-    reverseString("Greetings from Earth");
-    
-
-
-    //incomplete. will not return the correct "string"
+  
+  return reverse;
+  
+  }
+  
+  reverseString("hello");
+  
+  //complete
+  

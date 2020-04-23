@@ -1,14 +1,16 @@
 function factorialize(num) {
-
-    let result = 1;
-    
+  let result = 1;
+  
     for (var i = num-1; i > 0; i--) {
-      num = num * i;
+      num *= i;
       result = num;
-      }
-      return result;
     }
-    
-    factorialize(3);
-
-    
+   
+  console.log(result);
+  return result;
+       
+  }
+  
+  factorialize(5);
+  
+//complete
