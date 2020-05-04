@@ -1,18 +1,13 @@
 function confirmEnding(str, target) {
 
-    let result = "";
-    for (var i = 0; i < str.length; i++) {
-      str[i] == target ? result += str[i] : "n/a";
-    }
-    console.log(result);
-    
-    }
-    
-    confirmEnding("Congratulation", "on");
-    
-    /*
-      if (result == target) {
-          return "true";
-      }
+//create regex from variable using new RegExp.
+  let regex = new RegExp(target + "$");
 
-      //incomplete. this is not working at all.
+//test returns true or false.
+  return (regex.test(str));
+  }
+  
+  confirmEnding("Connor", "n");
+  
+
+  //complete
